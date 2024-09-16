@@ -217,3 +217,94 @@ body {
     border-radius: 0;                    /* Установка радиуса границы на 0 (убрать скругление) */
     cursor: pointer;                      /* Изменение курсора на указатель при наведении */
 }
+
+.footer {
+    border-radius: 30px 30px 0px 0px;
+    top: 50px;
+    height: 110px;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    margin: 0 205px; /* Устанавливаем отступы слева и справа */
+    width: calc(100% - 360px); /* Подгоняем ширину, учитывая отступы (205 * 2) */
+}
+
+.footer-name  {
+    width: 85px;
+    height: 30px;
+    top: 1509px;
+    margin-left: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.48px;
+    text-align: left;
+    color: #101010;
+}
+
+.footer-content {
+    display: flex; /* Используем флексбокс для создания двух столбцов */
+    justify-content: space-between; /* Распределяем пространство между столбцами */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    width: 427px; /* Указываем ширину для контейнера */
+    height: 82.8px; /* Указываем высоту для контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+    margin-top: -30px;
+    
+}
+
+.column {
+    gap: 10px; /* Задаем промежуток между элементами, можете изменить при необходимости */
+}
+
+.footer-content a {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block; /* Заставляем ссылки занимать всю ширину */
+    color: black; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    opacity: 1; /* Полная видимость ссылок */
+}
+
+.language-links {
+    display: flex; /* Используем flex для размещения ссылок в одну строку */
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+.orange-link {
+    font-size: 15px !important;
+    line-height: 18.29px !important;
+    color: #FFA542 !important; /* Цвет текста для Рус */
+    display: inline-flex; /* Используем flex для выравнивания иконки и текста */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+.orange-link img.icon {
+    margin-right: 5px; /* Отступ справа от иконки */
+    vertical-align: middle; /* Выравнивание иконки по центру строки */
+}
+
+.language-links a {
+    font-size: 15px !important;
+    line-height: 18.29px !important;
+    margin-left: 10px; /* Отступ между ссылками */
+}
+
+.messenger-icons {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 40px;
+    gap: 10px; /* Расстояние между иконками */
+}
+
+.messenger-icon {
+    width: 30px; /* Ширина иконки */
+    height: 20px; /* Высота иконки */
+}
